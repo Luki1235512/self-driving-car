@@ -9,12 +9,12 @@ class Sensor {
             this.readings = [];
     }
 
-    update(rodaBorders) {
+    update(roadBorders) {
         this.#castRays();
         this.readings = [];
 
         for (let i = 0; i < this.rays.length; i++) {
-            this.readings.push(this.#getReading(this.rays[i], rodaBorders));
+            this.readings.push(this.#getReading(this.rays[i], roadBorders));
         }
     }
 
