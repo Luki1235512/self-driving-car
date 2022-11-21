@@ -15,9 +15,9 @@ class Car {
         this.controls = new Controls();
     }
 
-    update() {
+    update(rodaBorders) {
         this.#move();
-        this.sensor.update();
+        this.sensor.update(rodaBorders);
     }
 
     #move() {
